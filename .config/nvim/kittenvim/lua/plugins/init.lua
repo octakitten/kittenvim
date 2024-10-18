@@ -8,6 +8,14 @@ return {
 },
 
 {
+    "zbirenbaum/copilot.lua",
+},
+
+{
+    "CopilotC-Nvim/CopilotChat.nvim",
+},
+
+{
     "nvim-telescope/telescope.nvim",
 },
 
