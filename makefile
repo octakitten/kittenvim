@@ -6,7 +6,7 @@ SRCDIR2 = .config/
 SRCDIR3 = .local/
 SRCDIR4 = tmp/
 SRCSCRIPT = uppies.sh
-INSTALLDIR = $out
+INSTALLDIR = $(KITTENVIM_DIR)
 
 all:
 
