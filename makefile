@@ -1,16 +1,29 @@
 SHELL = /bin/bash
 
+INSTALL_DIR_CMD = mkdir
 INSTALLCMD = cp -r
 SRCDIR1 = .cache/
 SRCDIR2 = .config/
 SRCDIR3 = .local/
 SRCDIR4 = tmp/
 SRCSCRIPT = uppies.sh
-INSTALLDIR = ~/.config/kittenvim
+INSTALLDIR = $(HOME)/.config/kittenvim/
+
+RM_CMD = rm -rf
 
 all:
+	$(INSTALL_DIR_CMD) $(INSTALLDIR)
+
+	$(INSTALL_DIR_CMD) $(INSTALLDIR)$(SRCDIR1)
+
+	$(INSTALL_DIR_CMD) $(INSTALLDIR)$(SRCDIR2)
+
+	$(INSTALL_DIR_CMD) $(INSTALLDIR)$(SRCDIR3)
+
+	$(INSTALL_DIR_CMD) $(INSTALLDIR)$(SRCDIR4)
 
 clean:
+	$(RM_CMD) $(INSTALLDIR)
 
 install:
 	$(INSTALLCMD) $(SRCDIR1) $(INSTALLDIR)$(SRCDIR1)
