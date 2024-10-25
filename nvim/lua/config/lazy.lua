@@ -40,8 +40,10 @@ lspconfig.nixd.setup {}
 lspconfig.rust_analyzer.setup {}
 lspconfig.sqlls.setup {}
 lspconfig.ts_ls.setup {}
-lspconfig.vscode_langservers_extracted.setup {}
 lspconfig.matlab_language_server.setup {}
 lspconfig.prettier.setup {}
 lspconfig.yaml_language_server.setup {}
 lspconfig.xmlformatter.setup {}
+lspconfig.css_lsp.setup {}
+lspconfig.html_lsp.setup {}
+lspconfig.json_lsp.setup {}
