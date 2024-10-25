@@ -23,6 +23,25 @@ require("lazy").setup({
     },
     install = { colorscheme = { "catppuccin" } },
     checker = { enabled = true },
+    "neovim/nvim-lspconfig",
 })
 
 require("mason").setup()
+
+local lspconfig = require("lspconfig")
+lspconfig.pyright.setup {}
+lspconfig.bashls.setup {}
+lspconfig.ccls.setup {}
+lspconfig.dockerls.setup {}
+lspconfig.java_language_server.setup {}
+lspconfig.lua_ls.setup {}
+lspconfig.markdown_oxide.setup {}
+lspconfig.nixd.setup {}
+lspconfig.rust_analyzer.setup {}
+lspconfig.sqlls.setup {}
+lspconfig.ts_ls.setup {}
+lspconfig.vscode-langservers-extracted.setup {}
+lspconfig.matlab-language-server.setup {}
+lspconfig.prettier.setup {}
+lspconfig.yaml-language-server.setup {}
+lspconfig.xmlformatter.setup {}
