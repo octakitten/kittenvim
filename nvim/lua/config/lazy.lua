@@ -41,7 +41,6 @@ lspconfig.sqlls.setup {}
 lspconfig.ts_ls.setup {}
 lspconfig.matlab_ls.setup {}
 lspconfig.yamlls.setup {}
-lspconfig.xmlformatter.setup {}
 lspconfig.cssls.setup {}
 lspconfig.html.setup {}
 lspconfig.jsonls.setup {}
