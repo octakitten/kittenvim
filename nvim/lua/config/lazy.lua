@@ -24,3 +24,5 @@ require("lazy").setup({
     install = { colorscheme = { "catppuccin" } },
     checker = { enabled = true },
 })
+
+require("mason").setup()

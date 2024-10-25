@@ -2,6 +2,12 @@ return {
 {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
+    opts = {
+      ensure_installed = {
+        "vim", "lua", "vimdoc", "c", "cpp", "python", "js", "html", "css",
+        "nix", "java", "rust", "ts", "bend", "cuda", "bash", "gnumake",
+      },
+    },
 },
 
 {
@@ -71,7 +77,7 @@ return {
 
 {
   "nvim-neo-tree/neo-tree.nvim",
-}
+},
 
 {
     "github/copilot.vim",
@@ -79,6 +85,19 @@ return {
 
 {
     "CopilotC-Nvim/CopilotChat.nvim",
+},
+
+{
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+    lspconfig = require "lspconfig",
+    servers = {
+        "bashls", "ccls", "csharp_ls", "dockerls", "java_language_server",
+        "lua_ls", "markdown_oxide", "nixd", "pyright", "rust_analyzer", "sqlls",
+        "ts_ls", "vscode-langservers-extracted", "matlab-language-server",
+        "prettier", "sql-formatter", "yaml-language-server", "xmlformatter"
+    },
 }
 
 }
