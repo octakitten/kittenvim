@@ -15,11 +15,16 @@ return {
 },
 
 {
-    "zbirenbaum/copilot.lua",
+--    "zbirenbaum/copilot.lua",
 },
 
 {
-    "CopilotC-Nvim/CopilotChat.nvim",
+  --  "CopilotC-Nvim/CopilotChat.nvim",
+    --branch = "canary",
+    --dependencies = {
+      --  { "zbirenbaum/copilot.lua" },
+        --{ "nvim-lua/plenary.nvim" },
+    --},
 },
 
 {
@@ -118,11 +123,11 @@ return {
 },
 
 {
-    "github/copilot.vim",
+    --"github/copilot.vim",
 },
 
 {
-    "CopilotC-Nvim/CopilotChat.nvim",
+    --"CopilotC-Nvim/CopilotChat.nvim",
 },
 
 {
