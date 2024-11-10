@@ -15,16 +15,16 @@ return {
 },
 
 {
---    "zbirenbaum/copilot.lua",
+    "zbirenbaum/copilot.lua",
 },
 
 {
-  --  "CopilotC-Nvim/CopilotChat.nvim",
-    --branch = "canary",
-    --dependencies = {
-      --  { "zbirenbaum/copilot.lua" },
-        --{ "nvim-lua/plenary.nvim" },
-    --},
+    "CopilotC-Nvim/CopilotChat.nvim",
+    branch = "canary",
+    dependencies = {
+        { "zbirenbaum/copilot.lua" },
+        { "nvim-lua/plenary.nvim" },
+    },
 },
 
 {
@@ -134,13 +134,13 @@ return {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
-    --lspconfig = require "nvim-lspconfig",
-    --servers = {
-    --    "bashls", "ccls", "csharp_ls", "dockerls", "java_language_server",
-    --    "lua_ls", "markdown_oxide", "nixd", "pyright", "rust_analyzer", "sqlls",
-    --    "ts_ls", "vscode-langservers-extracted", "matlab-language-server",
-    --    "prettier", "sql-formatter", "yaml-language-server", "xmlformatter"
-    --},
+--    lspconfig = require "nvim-lspconfig",
+--    servers = {
+--        "bashls", "ccls", "csharp_ls", "dockerls", "java_language_server",
+--        "lua_ls", "markdown_oxide", "nixd", "pyright", "rust_analyzer", "sqlls",
+--        "ts_ls", "vscode-langservers-extracted", "matlab-language-server",
+--        "prettier", "sql-formatter", "yaml-language-server", "xmlformatter"
+--    },
 }
 
 }
