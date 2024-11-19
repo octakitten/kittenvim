@@ -11,9 +11,43 @@ return {
 },
 
 {
+    'nvim-orgmode/orgmode',
+    event = 'VeryLazy',
+    ft = 'org',
+    config = function()
+        require('orgmode').setup({
+            org_agenda_files = {'~/org/*'},
+            org_default_notes_file = '~/org/notes.org',
+            org_hide_leading_stars = true,
+            org_indent_mode = 'noindent',
+            org_todo_keywords = {'TODO', 'DOING', 'BLOCKED', 'DONE'},
+            org_todo_keyword_faces = {
+                DOING = 'font-weight:bold',
+                BLOCKED = 'font-weight:bold',
+            },
+            org_agenda_templates = {
+                T = {
+                    description = 'Task',
+                    template = '* TODO %?\n  %U',
+                },
+                n = {
+                    description = 'Note',
+                    template = '* %?\n  %U',
+                },
+            },
+        })
+        require('nvim-treesitter.configs').setup({
+            ensure_installed = 'all',
+            ignore_install = { 'org' },
+        })
+    end,
+},
+
+{
     "hrsh7th/nvim-cmp",
 },
 
+--[[
 {
     "github/copilot.vim",
 },
@@ -26,7 +60,7 @@ return {
         { "nvim-lua/plenary.nvim" },
     },
 },
-
+--]]
 {
     "nvim-telescope/telescope.nvim",
 },
