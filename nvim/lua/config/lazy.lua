@@ -42,7 +42,7 @@ require('lazy').setup {
 }
 
 require("mason").setup()
-
+--[[
 require("cmd").setup({
 	mapping = {
 
@@ -86,9 +86,10 @@ require("cmd").setup({
 
   -- ... Your other configuration ...
 })
-
+--]]
 
 local lspconfig = require("lspconfig")
+--[[
 lspconfig.pyright.setup {}
 lspconfig.bashls.setup {}
 lspconfig.ccls.setup {}
@@ -137,3 +138,4 @@ lspconfig.isort.setup {}
 lspconfig.nixpkgs_fmt.setup {}
 lspconfig.prettier.setup {}
 lspconfig.omnisharp.setup {}
+--]]
