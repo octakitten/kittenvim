@@ -1,3 +1,19 @@
+vim.g.have_nerd_font = true
+vim.opt.number = true
+vim.schedule(function()
+    vim.opt.clipboard = 'unnamedplus'
+end)
+vim.opt.breakindent = true
+vim.opt.undofile = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.inccommand = 'split'
+vim.opt.cursorline = true
+vim.opt.confirm = true
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+
 require("config.lazy")
 require("plugins.init")
 require("plugins.keymaps")

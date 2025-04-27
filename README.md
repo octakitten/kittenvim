@@ -1,2 +1,2 @@
 # kittenvim
-Cute neovim config in a Nix package
+Cute neovim config with an autoinstaller.

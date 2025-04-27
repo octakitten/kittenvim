@@ -33,5 +33,6 @@ wk.add({
 { "<leader>tk", "<cmd>tabn<CR>", mode = "n" },
 { "<leader>tj", "<cmd>tabp<CR>", mode = "n" },
 { "<leader>ti", "<cmd>tabnew %<CR>", mode = "n" },
+{ "<leader>ac", vim.g.toggle_cmp, mode = "n", desc = "Toggle autocomplete" },
 })
 
