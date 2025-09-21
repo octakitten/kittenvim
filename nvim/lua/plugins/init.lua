@@ -1,12 +1,16 @@
 return {
 {
     "nvim-treesitter/nvim-treesitter",
+    lazy = false,
+    branch = 'main',
     build = ":TSUpdate",
     opts = {
       ensure_installed = {
         "vim", "lua", "vimdoc", "c", "cpp", "python", "js", "html", "css",
-        "nix", "java", "rust", "ts", "bend", "cuda", "bash", "gnumake",
+        "nix", "java", "rust", "ts", "cuda", "bash", "gnumake",
       },
+      ignore_install = { "ipkg" },
+
     },
 },
 
@@ -75,10 +79,6 @@ return {
                     template = '* %?\n  %U',
                 },
             },
-        })
-        require('nvim-treesitter.configs').setup({
-            ensure_installed = 'all',
-            ignore_install = { 'org' },
         })
     end,
 },
