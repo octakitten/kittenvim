@@ -33,6 +33,9 @@ vim.cmd('filetype plugin indent on')
 
 local wk = require("which-key")
 local builtin = require('telescope.builtin')
+local harpoon = require('harpoon')
+
+harpoon:setup({})
 
 wk.add({
 { ";", ":", desc = "CMD enter command mode", mode = "n"},
@@ -67,4 +70,12 @@ wk.add({
 { "<leader>tj", "<cmd>tabp<CR>", mode = "n" },
 { "<leader>ti", "<cmd>tabnew %<CR>", mode = "n" },
 { "<leader>ac", vim.g.toggle_cmp, mode = "n", desc = "Toggle autocomplete" },
+{ "<leader>ha", function() harpoon:list():add() end, desc = "harpoon add", mode = "n" },
+{ "<leader>hm", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, desc = "harpoon menu", mode = "n" },
+{ "<leader>h1", function() harpoon:list():select(1) end, desc = "harpoon option 1", mode = "n" },
+{ "<leader>h2", function() harpoon:list():select(2) end, desc = "harpoon option 2", mode = "n" },
+{ "<leader>h3", function() harpoon:list():select(3) end, desc = "harpoon option 3", mode = "n" },
+{ "<leader>h4", function() harpoon:list():select(4) end, desc = "harpoon option 4", mode = "n" },
+{ "<leader>hk", function() harpoon:list():next() end, desc = "harpoon next option", mode = "n" },
+{ "<leader>hj", function() harpoon:list():prev() end, desc = "harpoon prev option", mode = "n" },
 })

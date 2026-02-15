@@ -32,6 +32,8 @@ return {
 
 {
   "ThePrimeagen/harpoon",
+  branch = "harpoon2",
+  dependencies = { "nvim-lua/plenary.nvim" }
 },
 
 {
@@ -212,6 +214,10 @@ return {
 },
 
 {
+    "MunifTanjim/nui.nvim",
+},
+
+{
     --"github/copilot.vim",
 },
 
@@ -230,6 +236,10 @@ return {
 --        "ts_ls", "vscode-langservers-extracted", "matlab-language-server",
 --        "prettier", "sql-formatter", "yaml-language-server", "xmlformatter"
 --    },
+},
+
+{
+	"nvim-lua/plenary.nvim",
 }
 
 }
