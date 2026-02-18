@@ -240,6 +240,11 @@ return {
 
 {
 	"nvim-lua/plenary.nvim",
+},
+
+{
+    "atiladefreitas/lazyclip",
+    event = { "TextYankPost" },
 }
 
 }
