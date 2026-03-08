@@ -78,4 +78,6 @@ wk.add({
 { "<leader>h4", function() harpoon:list():select(4) end, desc = "harpoon option 4", mode = "n" },
 { "<leader>hk", function() harpoon:list():next() end, desc = "harpoon next option", mode = "n" },
 { "<leader>hj", function() harpoon:list():prev() end, desc = "harpoon prev option", mode = "n" },
+{ "<leader>gd", "<cmd>lua vim.lsp.buf.definition()<CR>", desc = "goto func definion", mode = "n"},
+{ "<leader>gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", desc - "goto func declaration", mode = "n" },
 })
